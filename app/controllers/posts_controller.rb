@@ -5,8 +5,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(content: params[:content])
-    redirect_to action: :index
+    post =Post.create(content: params[:content], checked: false)
+    render json:{post: post}
   end
 
   #checkedアクションの編集、既読の操作を行った時に実行される 

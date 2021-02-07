@@ -11,6 +11,8 @@
 .post-date{
   color: gray;
 }
+// div要素のdata-checkがtrueの時（メモが既読になった時）
+// CSSが適用されますよ
 div[data-check="true"]{
   background:#585555;
 }

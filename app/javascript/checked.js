@@ -1,4 +1,4 @@
-// checkという関数名を付けてあげる。クリックした時
+// checkという関数名を付けてあげる。
 function check() {
   // htmlのpostセレクタを持つ全要素を取得、定数postsで定義
   const posts = document.querySelectorAll(".post");
@@ -46,6 +46,6 @@ function check() {
         }
       };
     });
-  });
+  }); 
 }
 setInterval(check, 1000);
